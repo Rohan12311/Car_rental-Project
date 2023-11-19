@@ -1,0 +1,278 @@
+ /* apply to all pages of pattern */
+ *{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+    font-family: 'Times New Roman', Times, serif;    
+}
+/* apply to body pages  */
+body{
+    background-color: rgba(255, 255, 255,0.2);;
+    width: 100%;
+}
+/* app */
+.navbar{
+    height: 85px;
+    background-color: black;
+    border-radius: 2px;
+    position: relative;
+}
+
+.logo{
+    height: 85px;
+    width: 300px;
+    background-image: url(LOGO.jpg);
+    background-size: contain;
+    left: 0px;
+    border: border-box;
+    position: absolute;
+}
+
+#home-but{
+    height:55px;
+    width: 120px;
+    font-weight: bolder;
+    background-color: #fff;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    right: 150px;
+    top: 15%;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255);
+}
+
+#login{
+    height:55px;
+    width: 120px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    position: absolute;
+    right: 15px;
+    top: 15%;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+}
+main{
+    background-color: rgba(255, 255, 255,0.7);
+}
+.ph{
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-image: url(msj1.jpg);
+    border: #000 solid 3px;
+    border-radius: 10%;
+    left: 80px;
+    top: 30px;
+    background-size: cover;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.586);
+    border:1px solid #fff;
+}
+
+#ph2{
+    position: relative;
+    left: 900px;
+    bottom: 230px;
+    height: 300px;
+    width: 500px;
+    border-radius: 10%;
+    border: #000 solid 3px;
+    background-size: cover;
+    background-image: url(msj2.jpg);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.586);
+    border:1px solid #fff;
+}
+#ph3{
+    position: relative;
+    left: 900px;
+    bottom: 200px;
+    height: 300px;
+    width: 500px;
+    border-radius: 10%;
+    border: #000 solid 3px;
+    background-size: cover;
+    background-image: url(msj3.jpg);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.586);
+    border:1px solid #fff;
+}
+#spe1{
+    position: relative;
+    padding: 10px;
+    left: 45%;
+    bottom: 270px;
+    height: 300px;
+    width: 750px;
+    padding-left: 8px;
+    background: linear-gradient(1turn, #f1f6fd 30%, #edf1f7);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.586);
+    border:1px solid #fff;
+    border-color: black;
+    border-radius: 30px;
+}
+#scroller{
+    height: 120px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+#scroller h4{
+    font-size: 90px;
+    color: transparent;
+    font-family: gilroy;
+    display: inline-block;
+    font-weight: 850;
+    margin: 10px;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.2);
+    transition: all linear 0.5s;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-image: url(text.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    z-index: 5;
+}
+#scroller h4:hover{
+    color: #95c11e;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.table-box{
+    margin: 15px;
+    height: 500px;
+}
+.table-row{
+    display: table;
+    position: relative;
+    bottom: 850px;
+    left: -19%;
+    width: 800px;
+    margin: 10px auto;
+    padding: 12px 0;
+    color: #000;
+    font-size: 20px;
+    background: linear-gradient(1turn, #f1f6fd 30%, #edf1f7);
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.586);
+    border:1px solid #fff;
+}
+
+.table-cell{
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px #d6d4d4;
+    vertical-align: middle;
+}
+#spe2{
+    position: absolute;
+    top: 15px;
+}
+a{
+    text-decoration: none;
+
+}
+#but2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    height: 100px;
+    width: 200px;
+    background-color: orange;
+    position: relative;
+    left: 35%;
+    bottom: 100px;
+    border-radius: 30%;
+}
+
+
+@media only screen and (max-width:412px){
+    .navbar{
+        height: 50px;
+    }
+    .logo{
+        height: 30px;
+        top: 10px;
+        width: 120px;
+        background-size: cover;
+        left: 0px;
+    }
+    #home-but{
+        height: 25px;
+        width: 50px;
+        font-size: 10px;
+        right: 80px;
+    }
+    #login{
+        height: 25px;
+        width: 50px;
+        font-size: 10px;
+    }
+    .ph{
+        width: 350px;
+        height: 200px;
+        left: 25px;
+        top: 20px;
+    }
+    #ph2{
+        display: none;
+    }
+    #ph3{
+        display: none;
+    }
+    #scroller{
+        height: 50px;
+    }
+    #scroller h4{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    #spe1{
+        width: 350px;
+        height: auto;
+        left: 25px;
+        top: 60px;
+        box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.586);
+        border:1px solid #fff;
+    }
+    .table-box{
+        margin: 5px;
+    }
+    .table-row{
+        width: 350px;
+        font-size: 10px;
+        font-weight: 300;
+        left: 0px;
+        top: 80px;
+        border: 1.5px soli #000;
+    }
+    #but2{
+        font-size: 15px;
+        height: 50px;
+        width: 100px;
+        top: 90px;
+    }
+}
